@@ -1,6 +1,7 @@
 #!/bin/python3
 
 import os
+
 directory = os.path.realpath(os.path.dirname(__file__))
 
 temp_dir = input(f"Directory to norm (Default: {directory}): ")
@@ -23,8 +24,10 @@ if c != 'y':
     exit()
 
 for heap_name in list_dir:
-    heap_path = directory+'\\'+heap_name
 
+    heap_path = os.path.join(directory + os.sep, heap_name)
+
+    print(heap_path)
     if not os.path.isdir(heap_path):
         continue
     
@@ -33,12 +36,12 @@ for heap_name in list_dir:
     # using temporary name first to not overwrite file
     for i, file_name in enumerate(os.listdir(heap_path)):
         extension = os.path.splitext(file_name)[1]
-        old_name = heap_path+'\\'+file_name
-        new_name = heap_path+'\\'+f"TEMP_FILE_NAME_{heap_name}.{i}{extension}"
+        old_name = os.path.join(heap_path + os.sep, file_name)
+        new_name = os.path.join(heap_path + os.sep, f"TEMP_FILE_NAME_{heap_name}.{i}{extension}")
         os.rename(old_name, new_name)
     
     # renaming
     for i, file_name in enumerate(os.listdir(heap_path)):
-        old_name = heap_path+'\\'+file_name
-        new_name = heap_path+'\\'+f"{heap_name}.{i}{extension}"
+        old_name = os.path.join(heap_path + os.sep, file_name)
+        new_name = os.path.join(heap_path + os.sep, f"{heap_name}.{i}{extension}")
         os.rename(old_name, new_name)
