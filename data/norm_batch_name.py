@@ -1,3 +1,5 @@
+#!/bin/python3
+
 import os
 directory = os.path.realpath(os.path.dirname(__file__))
 
@@ -7,13 +9,20 @@ if not os.path.isdir(directory):
     print(f"{directory} is not a directory\n Aborting...")
     exit(-1)
 
-print(f"Directory to norm: {directory}\nlistdir: {os.listdir(directory)}")
+print(f"Directory to norm: {directory}")
+list_dir = []
+for d in os.listdir(directory):
+    if os.path.isdir(d):
+        list_dir.append(d)
+
+print("Dir list: " + str(list_dir))
+
 c = input("All files are going to be renamed. Continue? (y/n): ")
 if c != 'y':
     print("Aborting...")
     exit()
 
-for heap_name in os.listdir(directory):
+for heap_name in list_dir:
     heap_path = directory+'\\'+heap_name
 
     if not os.path.isdir(heap_path):
