@@ -1,6 +1,7 @@
 #!/bin/python3
 
-import os, re
+import os, re, imghdr
+from PIL import Image
 
 def getExtension(filename):
     return os.path.splitext(filename)[1] 
@@ -59,3 +60,32 @@ for heap_name in list_dir:
     images_name.sort(key=naturalKeys)
     renameDir(images_name, heap_path, heap_name)
     print("Done.")
+
+not_jpg_path = []
+for label in list_dir:
+    label_path = os.path.join(directory, label)
+    
+    if not os.path.isdir(label_path):
+        continue
+
+    for img_name in os.listdir(label_path):
+        img_path = os.path.join(label_path, img_name)
+        img_format = imghdr.what(img_path)
+        if img_format != 'jpeg':
+            not_jpg_path.append(img_path)
+
+not_jpg_count = len(not_jpg_path)
+if not_jpg_count == 0:
+    print("All done.")
+    exit(0)
+
+c = input(f"Found {not_jpg_count} images that AREN'T JPEG images. Format? (y/n): ")
+if c != "y":
+    print("Ending...")
+
+for img_path in not_jpg_path:
+    img = Image.open(img_path)
+    img = img.convert('RGB')
+    img.save(img_path)
+
+print("Ez breezy ;)")
