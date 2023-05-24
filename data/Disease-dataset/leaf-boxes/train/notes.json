@@ -1,0 +1,65 @@
+{
+  "categories": [
+    {
+      "id": 0,
+      "name": "Apple"
+    },
+    {
+      "id": 1,
+      "name": "Blueberry"
+    },
+    {
+      "id": 2,
+      "name": "Cherry"
+    },
+    {
+      "id": 3,
+      "name": "Corn"
+    },
+    {
+      "id": 4,
+      "name": "Grape"
+    },
+    {
+      "id": 5,
+      "name": "Orange"
+    },
+    {
+      "id": 6,
+      "name": "Peach"
+    },
+    {
+      "id": 7,
+      "name": "Pepper"
+    },
+    {
+      "id": 8,
+      "name": "Potato"
+    },
+    {
+      "id": 9,
+      "name": "Raspberry"
+    },
+    {
+      "id": 10,
+      "name": "Soybean"
+    },
+    {
+      "id": 11,
+      "name": "Squash"
+    },
+    {
+      "id": 12,
+      "name": "Strawberry"
+    },
+    {
+      "id": 13,
+      "name": "Tomato"
+    }
+  ],
+  "info": {
+    "year": 2023,
+    "version": "1.0",
+    "contributor": "Label Studio"
+  }
+}
