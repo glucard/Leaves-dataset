@@ -20,7 +20,7 @@ POST /predict
 
 #### Response
 
-```
+```json
 {
   "detections": [
     {
