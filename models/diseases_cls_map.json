@@ -1,0 +1,68 @@
+{
+    "Cherry": [
+        "Powdery_mildew",
+        "healthy"
+    ],
+    "Peach": [
+        "Bacterial_spot",
+        "healthy"
+    ],
+    "Grape": [
+        "Black_rot",
+        "Esca_(Black_Measles)",
+        "Leaf_blight_(Isariopsis_Leaf_Spot)",
+        "healthy"
+    ],
+    "Orange": [
+        "Haunglongbing_(Citrus_greening)"
+    ],
+    "Squash": [
+        "Powdery_mildew"
+    ],
+    "Apple": [
+        "Apple_scab",
+        "Black_rot",
+        "Cedar_apple_rust",
+        "healthy"
+    ],
+    "Corn": [
+        "Cercospora_leaf_spot Gray_leaf_spot",
+        "Common_rust",
+        "Northern_Leaf_Blight",
+        "healthy"
+    ],
+    "Strawberry": [
+        "Leaf_scorch",
+        "healthy"
+    ],
+    "Blueberry": [
+        "healthy"
+    ],
+    "Tomato": [
+        "Bacterial_spot",
+        "Early_blight",
+        "Late_blight",
+        "Leaf_Mold",
+        "Septoria_leaf_spot",
+        "Spider_mites Two-spotted_spider_mite",
+        "Target_Spot",
+        "Tomato_Yellow_Leaf_Curl_Virus",
+        "Tomato_mosaic_virus",
+        "healthy"
+    ],
+    "Potato": [
+        "Early_blight",
+        "Late_blight",
+        "healthy"
+    ],
+    "Pepper": [
+        "Bacterial_spot",
+        "healthy"
+    ],
+    "Raspberry": [
+        "healthy"
+    ],
+    "Soybean": [
+        "healthy"
+    ]
+}
