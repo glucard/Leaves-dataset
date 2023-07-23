@@ -35,8 +35,6 @@ The `data` directory contains three different datasets to support various leaf-r
 
 - **Amazon Leaves:** A dataset of images showcasing leaves from the Amazon rainforest. Use this dataset for training and testing leaf detection models.
 
-- **Leaves Labels:** A dataset of labels for the Amazon Leaves dataset. These labels are essential for supervising the training process of detection models.
-
 - **Disease Dataset:** A collection of images featuring leaves with various diseases. Use this dataset to train models capable of detecting diseases in different leaf species.
 
 For more details about each dataset, please refer to the [Data README](data/README.md).
@@ -44,10 +42,6 @@ For more details about each dataset, please refer to the [Data README](data/READ
 ### Models
 
 The `models` directory houses pre-trained YOLO and TensorFlow models. These models have been trained using the datasets in the `data` directory and are ready for integration into your applications. For additional information on the models, consult the [Models README](models/README.md).
-
-## Contributing
-
-We welcome contributions from the community to improve and expand the functionalities of this repository. If you'd like to contribute, please review our guidelines in [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 
