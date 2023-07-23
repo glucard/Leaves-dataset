@@ -24,19 +24,19 @@ POST /predict
 {
   "detections": [
     {
-	  "cls": "Corn",
-	  "conf": 0.7053574919700623,
-	  "disease": {
+      "cls": "Corn",
+      "conf": 0.7053574919700623,
+      "disease": {
         "cls": "Cercospora_leaf_spot Gray_leaf_spot",
-		"conf": 0.4618198275566101
-	  },
-	  "xyxy": [
-	    36,
-		0,
-		1257,
-		835
-	  ]
-	}
+        "conf": 0.4618198275566101
+      },
+      "xyxy": [
+        36,
+        0,
+        1257,
+        835
+      ]
+    }
   ]
 }
 ```
