@@ -1,3 +1,5 @@
 data_raw/
 data/leaves_filtered/
 .tempdataset/
+api_env/
+.vscode/

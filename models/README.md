@@ -20,3 +20,4 @@ model = YOLO("path/to/model.pt")  # load a pretrained model (recommended for tra
 results = model("path/to/leaf.jpg")  # predict on an image
 ```
 - Learn more at yolov8 ultralytics repository https://github.com/ultralytics/ultralytics#readme
+- See more predicting at https://docs.ultralytics.com/modes/predict/#inference-sources
